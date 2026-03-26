@@ -46,7 +46,7 @@ it('generates composer.json without pest tests', function () {
     expect($composerData['description'])->toBe('Test API SDK');
     expect($composerData['type'])->toBe('library');
     expect($composerData['require']['php'])->toBe('^8.2');
-    expect($composerData['require']['saloonphp/saloon'])->toBe('^3.0');
+    expect($composerData['require']['saloonphp/saloon'])->toBe('^3.0|^4.0');
     expect($composerData['require']['spatie/laravel-data'])->toBe('^3.0|^4.0');
     expect($composerData['autoload']['psr-4'])->toBe(['Acme\\TestSDK\\' => 'src/']);
 
@@ -109,7 +109,7 @@ it('generates composer.json with pest tests', function () {
     // Should have Pest dependencies
     expect($composerData['require-dev']['pestphp/pest'])->toBe('^2.0|^3.0');
     expect($composerData['require-dev']['orchestra/testbench'])->toBe('^8.0|^9.0|^10.0');
-    expect($composerData['require-dev']['saloonphp/laravel-plugin'])->toBe('^3.0');
+    expect($composerData['require-dev']['saloonphp/laravel-plugin'])->toBe('^3.0|^4.0');
     expect($composerData['require-dev']['vlucas/phpdotenv'])->toBe('^5.6');
     expect($composerData['require-dev']['spatie/laravel-data'])->toBe('^3.0|^4.0');
 

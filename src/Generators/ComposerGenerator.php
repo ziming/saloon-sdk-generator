@@ -27,7 +27,7 @@ class ComposerGenerator implements PostProcessor
             'type' => 'library',
             'require' => [
                 'php' => '^8.2',
-                'saloonphp/saloon' => '^3.0',
+                'saloonphp/saloon' => '^3.0|^4.0',
                 'spatie/laravel-data' => '^3.0|^4.0',
             ],
             'require-dev' => $this->getDevDependencies(),
@@ -90,7 +90,7 @@ class ComposerGenerator implements PostProcessor
             return [
                 'pestphp/pest' => '^2.0|^3.0',
                 'orchestra/testbench' => '^8.0|^9.0|^10.0',
-                'saloonphp/laravel-plugin' => '^3.0',
+                'saloonphp/laravel-plugin' => '^3.0|^4.0',
                 'spatie/laravel-data' => '^3.0|^4.0',
                 'vlucas/phpdotenv' => '^5.6',
             ];

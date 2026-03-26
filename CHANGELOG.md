@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.6.0] - 2026-03-26
+
+### Added
+- Saloon v4 support: upgraded `saloonphp/saloon` to `^4.0` and `saloonphp/laravel-plugin` to `^4.0`
+- Generated SDKs now accept both Saloon v3 and v4 (`^3.0|^4.0`)
+
+### Fixed
+- Multi-authenticator connectors now correctly use `defaultAuth()` instead of `getAuthenticator()`, consistent with single-authenticator behavior and Saloon's intended override pattern
+
+### Credits
+- Thanks to @Sammyjo20 for the Saloon v4 upgrade in PR #40
+
 ## [1.5.0] - 2026-03-25
 
 ### Added
